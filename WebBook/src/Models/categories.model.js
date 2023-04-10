@@ -15,8 +15,8 @@ const categorySchema = new mongoose.Schema({
     },
     Books: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Books'
+        ref: 'Book'
     }]
 });
 
-module.exports = mongoose.model('Categories', categorySchema);
+module.exports = mongoose.model('Category', categorySchema);
